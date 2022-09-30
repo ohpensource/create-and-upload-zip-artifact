@@ -5,8 +5,8 @@
         id: create-and-upload-zip-artifact
         with:
           region: $AWS_REGION
-          access-key: $AWS_ACCESS_KEY_ID
-          secret-key: $AWS_SECRET_ACCESS_KEY
+          access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           destination-account: $ARTIFACTS_AWS_ACCOUNT_ID
           role-name: $AWS_ROLE_NAME
           version: "v0.0.1"
