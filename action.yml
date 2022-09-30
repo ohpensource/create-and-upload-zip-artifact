@@ -36,5 +36,14 @@ runs:
   using: "composite"
   steps:
     - id: upload-zip-artifact
-      run: ${{ github.action_path }}/create-and-upload-zip-artifact.sh ${{ inputs.region }} ${{ inputs.access-key }} ${{ inputs.secret-key }} ${{ inputs.destination-account }} ${{ inputs.role-name }} ${{ inputs.version }} ${{ inputs.service-name }} ${{ inputs.bucket-name }}
       shell: bash
+      run: |
+        ${{ github.action_path }}/create-and-upload-zip-artifact.sh \
+          "${{ inputs.region }}" \
+          "${{ inputs.access-key }}" \
+          "${{ inputs.secret-key }}" \
+          "${{ inputs.destination-account }}" \
+          "${{ inputs.role-name }}" \
+          "${{ inputs.version }}" \
+          "${{ inputs.service-name }}" \
+          "${{ inputs.bucket-name }}"
