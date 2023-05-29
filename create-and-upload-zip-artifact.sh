@@ -68,6 +68,6 @@ S3_DESTINATION="s3://$BUCKET_NAME/$S3_KEY"
 log_key_value_pair "s3-destination" $S3_DESTINATION
 aws s3 cp $DESTINATION_ZIP $S3_DESTINATION
 
-echo "::set-output name=s3_destination_key::$S3_DESTINATION"
-echo "::set-output name=s3_object_key::$S3_KEY"
+echo "s3_destination_key=$S3_DESTINATION"   >> $GITHUB_OUTPUT
+echo "s3_object_key=$S3_KEY"                >> $GITHUB_OUTPUT
 cd $WORKING_FOLDER
