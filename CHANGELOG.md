@@ -1,3 +1,9 @@
+# :confetti_ball: 0.0.5 (2023-05-29T13:18:35.474Z)
+- - -
+## :bug: Fixes
+* LANZ-3915 fix script permissions (#4)
+- - -
+- - -
 # :confetti_ball: 0.0.4 (2023-05-29T13:02:26.967Z)
 - - -
 ## :bug: Fixes
