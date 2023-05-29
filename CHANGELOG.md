@@ -1,3 +1,9 @@
+# :confetti_ball: 0.0.4 (2023-05-29T13:02:26.967Z)
+- - -
+## :bug: Fixes
+* LANZ-3915 updated GH action to use `>> $GITHUB_OUTPUT` (#3)
+- - -
+- - -
 # :confetti_ball: 0.0.3 (2022-09-30T20:36:44.374Z)
 - - -
 ## :bug: Fixes
